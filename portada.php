@@ -30,7 +30,32 @@
               <a href="sesion.php"> Iniciar Sesión </a>
             </li>
             <li>
-              <a href="buscar.php"> Buscar </a>
+              <a href="inicio.php"> Inicio </a>
+            </li>
+          </ul>
+        </nav>
+        <div id= "buscador" class="bloque">
+          <h3> Buscar</h3>
+          <form action= "productos.php" method="POST">
+            <input type= "text" name= "busqueda" />
+            <input type= "submit" value= "Buscar" />
+          </form>
+
+        <!--/Productos -->
+        <nav id="productos">
+          <h1> Productos </h1>
+          <ul>
+            <li>
+              <a href="televisores.php"> Televisores </a>
+            </li>
+            <li>
+              <a href="celulares.php"> Celulares </a>
+            </li>
+            <li>
+              <a href="laptops.php"> Laptops </a>
+            </li>
+            <li>
+              <a href="accesorios.php"> Accesorios </a>
             </li>
           </ul>
         </nav>
