@@ -1,5 +1,12 @@
 <?php
-session_start();
+// Definir variables
+$server='localhost';
+$username='root';
+$password='';
+$data='electroshop';
 //Conexion a la base de datos
-$con = mysqli_connect("localhost","root","","electroshop");
+$db= mysqli_connect($server,$username,$password,$data);
+
+//Iniciar sesión
+session_start();
 ?>
