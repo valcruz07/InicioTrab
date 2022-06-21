@@ -31,16 +31,10 @@
               <a href="sesion.php"> Iniciar Sesión </a>
             </li>
             <li>
-              <a href="inicio.php"> Inicio </a>
+              <a href="portada.php"> Inicio </a>
             </li>
           </ul>
         </nav>
-        <div id= "buscador" class="bloque">
-          <h3> </h3>
-          <form action= "buscador.php" method="POST">
-            <input type= "text" name= "busqueda" />
-            <input type= "submit" value= "Buscar" />
-          </form>
 
         <!--/Productos -->
         <nav id="productos">
@@ -57,7 +51,7 @@
               <tbody>
                 <tr align= 'center'>
                   <td> <img scr="imagenes\apple.png" width="500px" height="300px"> </td>
-                  <td> <img scr="imagenes\lenovo.png" alt="lenovo" width='500px' height='300px'> </td>
+                  <td> <img scr="imagenes\lenovo.png" width='500px' height='300px'> </td>
                 </tr>
               </tbody>
             </table>
