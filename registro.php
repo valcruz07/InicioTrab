@@ -45,7 +45,7 @@ if(isset($POST['submit'])) {
     $guardar_usuario= true;
   }else{
     $_SESSION['errores']=$errores;
-    header('Location: trabajoSIN.php');
+    header('Location: portada.php');
 
   }
 

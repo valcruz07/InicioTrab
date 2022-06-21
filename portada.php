@@ -6,6 +6,7 @@
 <HTML lang="es">
   <head>
     <meta charset="utf-8" />
+    <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
     <title> ElectroShop </title>
     <link rel="stylesheet" type="text/css" href="estilos.css"
@@ -35,7 +36,7 @@
           </ul>
         </nav>
         <div id= "buscador" class="bloque">
-          <h3> Buscar</h3>
+          <h3> </h3>
           <form action= "buscador.php" method="POST">
             <input type= "text" name= "busqueda" />
             <input type= "submit" value= "Buscar" />
@@ -43,35 +44,35 @@
 
         <!--/Productos -->
         <nav id="productos">
-          <h1> Productos </h1>
+          <h1>  </h1>
           <div class= "row">
           <div class= "col s8 offset-s2" >
             <table>
               <thead>
-                <tr>
-                  <th> <a href="televisores.php"> Televisores </a> </th>
-                  <th> <a href="celulares.php"> Celulares </a> </th>
+                <tr align= 'center'>
+                  <th> <a href="apple.php"> Apple </a> </th>
+                  <th> <a href="lenovo.php">Lenovo </a> </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td> Foto televisor</td>
-                  <td> Foto celular</td>
+                <tr align= 'center'>
+                  <td> <img scr="imagenes\apple.png" width="500px" height="300px"> </td>
+                  <td> <img scr="imagenes\lenovo.png" alt="lenovo" width='500px' height='300px'> </td>
                 </tr>
               </tbody>
             </table>
 
             <table>
               <thead>
-                <tr>
-                  <th> <a href="laptops.php"> Laptops </a> </th>
-                  <th> <a href="accesorios.php"> Accesorios </a> </th>
+                <tr align= 'center'>
+                  <th> <a href="xiaomi.php"> Xiaomi </a> </th>
+                  <th> <a href="hp.php"> HP </a> </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td> Foto laptop</td>
-                  <td> foto accesorios</td>
+                <tr align= 'center'>
+                  <td><img scr="imagenes\xiaomi.png" width="500px" height="300px"/></td>
+                  <td><img scr="imagenes\hp.png" width="535px" height="300px"/></td>
                 </tr>
               </tbody>
             </table>
