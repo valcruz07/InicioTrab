@@ -1,12 +1,10 @@
 <?php
 session_start();
 if(isset($POST['submit'])) {
-
-    $nombre=(isset($_POST['nombre']) ? $_POST['nombre'] : false;
-    $Apellido=(isset($_POST['Apellido']) ? $_POST['Apellido'] : false;
-    $email=(isset($_POST['email']) ? $_POST['email'] : false;
-    $password=(isset($_POST['password']) ? $_POST['password'] : false;
-
+    $nombre=(isset($_POST['nombre']) ? $_POST['nombre'] : false);
+    $Apellido=(isset($_POST['Apellido']) ? $_POST['Apellido'] : false);
+    $email=(isset($_POST['email']) ? $_POST['email'] : false);
+    $password=(isset($_POST['password']) ? $_POST['password'] : false);
   //Validamos
   //Array de errores
   $errores= array();
