@@ -1,4 +1,4 @@
-// Para que no se marque de azul los links
+<!-- Para que no se marque de azul los links-->
 *{
   margin:0px;
   padding:0px;
@@ -12,14 +12,14 @@
 }
 
 
-//Color de la pg
+<!-- Color de la pg
 
 body{
   background: #f8f7f7;
   
 }
 
-/Cabecera
+<!--Cabecera
 #cabecera{
     width: 150px;
     height:auto;
@@ -46,7 +46,7 @@ body{
   cursor:pointer;
 }
 
-/Menu/
+<!--Menu/
 #menu{
     clear:both;
     width:100%;
@@ -88,5 +88,6 @@ body{
   clear:both;
   overflow: hidden;
   line-height: 80px;
-  
+  border-spacing: 80px;
 }
+
