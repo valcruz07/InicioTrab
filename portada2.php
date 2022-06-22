@@ -11,7 +11,7 @@
     <title> ElectroShop </title>
     <link rel="stylesheet" type="text/css" href="estilos.css"
   </head>
-  <body>
+  <body style="background-color:#08E7EE;">
 
 <?php require_once 'portada2.php';?>
       <!--Cabecera -->
@@ -22,28 +22,35 @@
           </a>
         </div>
         <!--/Menu -->
+        <br/>
+        <br/>
         <nav id="menu">
           <ul>
             <li>
               <a href="cerrar.php"> Cerrar Sesión </a>
             </li>
             <li>
+              <a href="historial.php"> Historial </a>
+            </li>
+            <li>
               <a href="carrito.php"> Carrito de compras </a>
             </li>
             <li>
-              <a href="sesion.php"> </a>
+              <a href="sesion.php"> Valeria </a>
             </li>
             <li>
               <a href="portada.php"> Inicio </a>
             </li>
           </ul>
         </nav>
-        <div id= "buscador" class="bloque">
+        <div id= "buscador" class="bloque" >
           <h3> </h3>
+          <center>
           <form action= "buscador.php" method="POST">
             <input type= "text" name= "busqueda" />
             <input type= "submit" value= "Buscar" />
           </form>
+          </center>
 
         <!--/Productos -->
         <nav id="productos">
@@ -58,9 +65,9 @@
                 </tr>
               </thead>
               <tbody>
-                <tr align= 'center'>
-                  <td> <img scr="imagenes\apple.png" width="500px" height="300px"> </td>
-                  <td> <img scr="imagenes\lenovo.png" width='500px' height='300px'> </td>
+              <tr align= 'center'>
+                  <td><a href="apple.php"> <img src="./imagenes/apple.png" width="250px" height="250px"> </a> </td>
+                  <td><a href="lenovo.php"><img src="./imagenes/lenovo.png" width='400px' height='90px'></a> </td>
                 </tr>
               </tbody>
             </table>
@@ -74,8 +81,8 @@
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td><img scr="imagenes\xiaomi.png" width="500px" height="300px"/></td>
-                  <td><img scr="imagenes\hp.png" width="535px" height="300px"/></td>
+                  <td><a href="xiaomi.php"> <img src="./imagenes/xiaomi.png" width="300px" height="200px"/></a></td>
+                  <td><a href="hp.php"><img src="./imagenes/hp.png" width="300px" height="200px"/></a></td>
                 </tr>
               </tbody>
             </table>
