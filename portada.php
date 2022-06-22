@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="estilos.css"
   </head>
   <body>
+  <body style="background-color:#E8FDF8;">
 
 <?php require_once 'portada.php';?>
       <!--Cabecera -->
@@ -41,7 +42,7 @@
           <h1>  </h1>
           <div class= "row">
           <div class= "col s8 offset-s2" >
-            <table>
+            <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
                   <th> <a href="apple.php"> Apple </a> </th>
@@ -50,13 +51,13 @@
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td> <img scr="imagenes\apple.png" width="500px" height="300px"> </td>
-                  <td> <img scr="imagenes\lenovo.png" width='500px' height='300px'> </td>
+                  <td> <img src="./imagenes/apple.png" width="300px" height="300px"> </td>
+                  <td> <img src="./imagenes/lenovo.png" width='300px' height='300px'> </td>
                 </tr>
               </tbody>
             </table>
 
-            <table>
+            <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
                   <th> <a href="xiaomi.php"> Xiaomi </a> </th>
@@ -65,8 +66,8 @@
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td><img scr="imagenes\xiaomi.png" width="500px" height="300px"/></td>
-                  <td><img scr="imagenes\hp.png" width="535px" height="300px"/></td>
+                  <td><img src="./imagenes/xiaomi.png" width="300px" height="200px"/></td>
+                  <td><img src="./imagenes/hp.png" width="300px" height="200px"/></td>
                 </tr>
               </tbody>
             </table>

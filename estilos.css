@@ -15,7 +15,8 @@
 //Color de la pg
 
 body{
-  background: #F4F4F4;
+  background: #f8f7f7;
+  
 }
 
 /Cabecera
@@ -87,4 +88,5 @@ body{
   clear:both;
   overflow: hidden;
   line-height: 80px;
+  
 }

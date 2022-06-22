@@ -9,7 +9,7 @@
     <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
     <title> ElectroShop </title>
-    <link rel="stylesheet" type="text/css" href="estilos2.css"
+    <link rel="stylesheet" type="text/css" href="estilos.css"
   </head>
   <body>
 
@@ -24,6 +24,9 @@
         <!--/Menu -->
         <nav id="menu">
           <ul>
+            <li>
+              <a href="cerrar.php"> Cerrar Sesión </a>
+            </li>
             <li>
               <a href="carrito.php"> Carrito de compras </a>
             </li>
@@ -47,7 +50,7 @@
           <h1>  </h1>
           <div class= "row">
           <div class= "col s8 offset-s2" >
-            <table>
+            <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
                   <th> <a href="apple.php"> Apple </a> </th>
@@ -62,7 +65,7 @@
               </tbody>
             </table>
 
-            <table>
+            <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
                   <th> <a href="xiaomi.php"> Xiaomi </a> </th>
