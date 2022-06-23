@@ -5,11 +5,11 @@
       <h1> Bienvenido a Electroshop</h1>
       <aside id="ess2"
       <div id="register" class="bloque">
-      <link rel="stylesheet" type="text/css" href="estsesion.css"
+      <link rel="stylesheet" type="text/css" href="estregist.css"
           <?php if(isset($_SESSION['errores'])):?>
               <?php var_dump($_SESSION['errores']); ?>
           <?php endif; ?>
-          <h3> Registrarse </h3>
+          <h3><th>  Registrarse</th>  </h3>
           <form action="registro.php" method="POST">
             <label for="nombre">Nombre </label>
             <input type="text" name="nombre"/>
