@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="estsesion.css"
           
           <h2> Inicio de Sesión </h2>
-          <form action="electroshop.php" method="POST">
+          <form action="login.php" method="POST">
             <label for="email">Email </label>
             <input type="email" name="usuario"/>
 

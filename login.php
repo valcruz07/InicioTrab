@@ -4,7 +4,7 @@ require_once 'conexion.php';
 
 // Recoger datos del formulario
 if (isset($_POST)){
-  $email=$_POST['email'];
+  $email=$_POST['usuario'];
   $password=md5($_POST['password']);
   $sql = "SELECT * from cliente where CI_Correo = '".$email."'";
   echo $sql;
