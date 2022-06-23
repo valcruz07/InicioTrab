@@ -11,7 +11,8 @@
     <title> ElectroShop </title>
     <link rel="stylesheet" type="text/css" href="estilos.css"
   </head>
-  <body>
+  
+  <body style="background-color:#08E7EE;">
 
 <?php require_once 'portada.php';?>
       <!--Cabecera -->
@@ -23,6 +24,8 @@
         </div>
         <!--/Menu -->
         <nav id="menu">
+        <br/>
+        <br/>
           <ul>
             <li>
               <a href="carrito.php"> Carrito de compras </a>
@@ -41,7 +44,7 @@
           <h1>  </h1>
           <div class= "row">
           <div class= "col s8 offset-s2" >
-            <table>
+            <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
                   <th> <a href="apple.php"> Apple </a> </th>
@@ -56,7 +59,7 @@
               </tbody>
             </table>
 
-            <table>
+            <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
                   <th> <a href="xiaomi.php"> Xiaomi </a> </th>
@@ -65,8 +68,8 @@
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td><img scr="imagenes\xiaomi.png" width="500px" height="300px"/></td>
-                  <td><img scr="imagenes\hp.png" width="535px" height="300px"/></td>
+                  <td><a href="xiaomi.php"> <img src="./imagenes/xiaomi.png" width="300px" height="200px"/></a></td>
+                  <td><a href="hp.php"><img src="./imagenes/hp.png" width="300px" height="200px"/></a></td>
                 </tr>
               </tbody>
             </table>
