@@ -50,7 +50,7 @@
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td> <img scr="imagenes\apple.png" width="500px" height="300px"> </td>
+                  <td> <img scr="imagenes\apple.png" width="500px" height="300px" > </td>
                   <td> <img scr="imagenes\lenovo.png" width='500px' height='300px'> </td>
                 </tr>
               </tbody>

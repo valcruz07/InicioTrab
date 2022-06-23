@@ -17,6 +17,9 @@
             <label for="Apellido"> Apellido </label>
             <input type="text" name="Apellido" />
 
+            <label for="celular"> Celular </label>
+            <input type="int" name="celular" />
+
             <label for="email">Email </label>
             <input type="email" name="email"/>
 
