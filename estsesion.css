@@ -6,37 +6,40 @@
     margin: 0px auto;
     margin-top: 80px;
     margin-bottom: 0px;
-    color: #2979CD
+    color: #101111
 
 }
 #ess{
     font-family:"fajala",'Times New Roman', Times, serif;
     width: 80%;
-    min-height: 300px;
-    margin: 10px auto;
+    min-height: 400px;
+    margin: 50px auto;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     color: #080808; 
+    font-size: 30px;
+    font-weight: bold;
+    
 }
 
 .bloque{
     display: block;
     width:90%;
     margin:30px auto;
-    background: rgb(216, 213, 213);
+    background: rgb(168, 217, 245);
     padding: 20px;
-    box-shadow: 0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF inset;
+    box-shadow: 0px 0px 1px rgba(38, 41, 201, 0.3),0px 3px 7px rgba(72, 88, 233, 0.3), 0px 0px 1px #e2f2f8 inset;
   }
   
   .bloque h2{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     
     width:1200%;
   }
 
   .bloque h3{
     margin-bottom: 15px;
-    width:80%;
+    width:100%;
   }
   
   label,
@@ -45,12 +48,14 @@
   input[type="password"]{
     display: block;
     width: 95%;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 7px;
+    margin-bottom: 5px;
   }
   
   input[type="button"],
   input[type="submit"]{
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
+    width:20%;
+    height: 5%;
   }
