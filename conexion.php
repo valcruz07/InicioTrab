@@ -1,9 +1,9 @@
 <?php
 // Definir variables
 $server='localhost';
-$username='root';
-$password='';
-$data='electroshop';
+$username='trabajo_sin';
+$password='trabajo_sin';
+$data='TrabajoSin';
 //Conexion a la base de datos
 $db= mysqli_connect($server,$username,$password,$data);
 
