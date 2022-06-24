@@ -94,3 +94,51 @@ body{
   font-size: 30px;
 }
 
+.productos img{
+  margin-top: 10px;
+  height: 150px;
+}
+
+.productos h5 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.loguito img{
+  width: 200px;
+}
+
+.text-centrado {
+  text-align: center;
+}
+
+.subtitulo {
+  margin: 100px;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0,12), 0 1px 2px rgba(0,0,0,0,24);
+}
+
+.moneda {
+  content: '$';
+  color: re;
+}
+
+.boton-ad-car {
+  width: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+  margin: 20px 100px;
+  color: white;
+  background-color: green;
+  float:right;
+  text-align: center;
+  text-decoration:none;
+}
+
+
