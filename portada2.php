@@ -19,7 +19,7 @@
       <!--Cabecera -->
       <header id="cabecera">
         <div id="logo">
-          <a href="portada2.php">
+            <a href="portada2.php?idusu=<?php echo $idusu; ?>">
             <h1> ElectroShop </h1>
           </a>
         </div>
