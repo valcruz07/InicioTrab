@@ -1,5 +1,6 @@
 <?php 
 require_once 'Lenovo.php';
+include 'conexion.php';
 ?>
 
 <link rel="stylesheet" type="text/css" href="estilos.css">
@@ -31,12 +32,11 @@ require_once 'Lenovo.php';
             </li>
           </ul>
       </div>
-        </nav>
+    </nav>
     </header>
         <header style= "text-align: center;" class = "loguito">
         <img src="imagenes/lenovo.png" >
         </header>
-    <div class = "menu">
     <header>
       
         <h3 class = "subtitulo"> PRODUCTOS </h3>
@@ -44,105 +44,50 @@ require_once 'Lenovo.php';
       <div class ="productos">
         <div class = "text-centrado">
           <div class = "row">
-            <div class = "col-xs-10 col-sm-6 col-md-4 product">
+
+            <?php
+            $consult = "SELECT * FROM producto 
+            JOIN prod_marca ON producto.id_Producto = prod_marca.id_Producto 
+            JOIN marca ON marca.Id_Marca = prod_marca.Id_Marca 
+            JOIN precio ON precio.id_Precio = producto.id_Precio
+            WHERE marca.Nombre='Lenovo'";
+            $result = mysqli_query($db, $consult);
+            $product = mysqli_fetch_array($result);
+            $c = 1;
+
+            if ($result = mysqli_query($db, $consult)) {
+                while ($product = mysqli_fetch_array($result)) {
+            ?>
+            <div class = "col-xs-9 col-sm-5 col-md-4 product">
                 <div class = "card">
                   <div class = "text-centrado">
-                    <?php
-                    include 'conex.php';
-                    include 'conexion.php';
-                    $consult = "SELECT * FROM producto
-                                WHERE id_Producto = 1";
-                    $result = mysqli_query($conexion, $consult);
-                    $product = mysqli_fetch_array($result);
-                    ?>
-
-                    <img src="imagenes/lenovo 1.jpg" alt ="Imagen Producto 1">
+                    <img src="imagenes/lenovo <?php echo $c; ?>.jpg" alt ="Imagen Producto <?php echo $c; ?>">
                     <h5 > <?php echo $product['Prod_Nombre']; ?> </h5>
 
                     <div class="container mt-5">
                      <div class="row">
                         <div class="col-sm-6">
-                          <?php
-                          $precio = "SELECT * FROM precio
-                                  WHERE id_Precio = 1";
-
-                                  $result1 = mysqli_query($conexion, $precio);
-                                  $precio = mysqli_fetch_array($result1);
-
-                          ?>
                           <div class="row">
                             <div class="col-sm-8">Precio</div>
-                          <div class="moneda">
-                             S/. <?php echo number_format($precio['Prec_Precio'], 2, '.', ','); ?>
-                         </div>
-                          <a href = "carrito.php"
+                            <div class="moneda">
+                             S/. <?php echo number_format($product['Prec_Precio'], 2, '.', ','); ?>
+                            </div>
+                            <a href = "carrito.php"
                              class = "boton-ad-car"> Añadir al carrito </a>
-                       </div>
+                          </div>
+                        </div>
+                     </div>
                     </div>
                     </div>
-                  </div>
                 </div>
             </div>
+            <?php
+            $c = $c + 1;
+                }
+            }
+            ?>
             </div>
-
-            <div class = "col-xs-10 col-sm-6 col-md-4 product">
-                <div class = "card">
-                  <div class = "text-centrado">
-                  <?php
-                    include 'conexion.php';
-                    $consult = "SELECT * FROM producto
-                                WHERE id_Producto = 2";
-                    $result = mysqli_query($conexion, $consult);
-                    $product = mysqli_fetch_array($result);
-                    ?>
-
-                    <img src="imagenes/lenovo 2.jpg" alt ="Imagen Producto 2">
-                    <h5 >  <?php echo $product['Prod_Nombre']; ?> </h5>
-
-                    <div class="container mt-5">
-                     <div class="row">
-                        <div class="col-sm-6">
-                          <?php
-                          $precio = "SELECT * FROM precio
-                                  WHERE id_Precio = 2";
-
-                                  $result1 = mysqli_query($conexion, $precio);
-                                  $precio = mysqli_fetch_array($result1);
-
-                          ?>
-                          <div class="row">
-                            <div class="col-sm-8">Precio</div>
-                          <div class="moneda">
-                             S/. <?php echo number_format($precio['Prec_Precio'], 2, '.', ','); ?>
-                         </div>
-                          <a href = "carrito.php"
-                             class = "boton-ad-car"> Añadir al carrito </a>
-                       </div>
-                    </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class = "col-xs-10 col-sm-6 col-md-4 product">
-                <div class = "card">
-                  <div class = "text-centrado">
-                  <?php
-                    include 'conexion.php';
-                    $consult = "SELECT * FROM producto
-                                WHERE id_Producto = 3";
-                    $result = mysqli_query($conexion, $consult);
-                    $product = mysqli_fetch_array($result);
-                    ?>
-
-                    <img src="imagenes/lenovo 3.png" alt ="Imagen Producto 3">
-                    <h5 >  <?php echo $product['Prod_Nombre']; ?> </h5>
-                  </div>
-                </div>
-            </div>
-
-          </div>
         </div>
-      </div>
-    </div>
+            </div>
+
+
