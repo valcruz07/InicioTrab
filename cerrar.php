@@ -1,1 +1,2 @@
-<?php require_once 'portada.php';?>
+<?php header ('location:index.php');
+?>

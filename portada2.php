@@ -1,4 +1,6 @@
-<?php require_once 'conexion.php';?>
+<?php require_once 'conexion.php';
+      require_once 'iniciosesion.php';
+?>
 
 <!-- Inicio de la pg -->
 
@@ -36,10 +38,7 @@
               <a href="carrito.php"> Carrito de compras </a>
             </li>
             <li>
-              <a href="sesion.php"> Valeria </a>
-            </li>
-            <li>
-              <a href="portada.php"> Inicio </a>
+              <a href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
             </li>
           </ul>
         </nav>
@@ -60,14 +59,14 @@
             <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
-                  <th> <a href="apple.php"> Apple </a> </th>
-                  <th> <a href="lenovo.php">Lenovo </a> </th>
+                  <th> <a href="apple.php?idusu=<?php echo $idusu; ?>"> Apple </a> </th>
+                  <th> <a href="lenovo.php?idusu=<?php echo $idusu; ?>">Lenovo </a> </th>
                 </tr>
               </thead>
               <tbody>
               <tr align= 'center'>
-                  <td><a href="apple.php"> <img src="./imagenes/apple.png" width="250px" height="250px"> </a> </td>
-                  <td><a href="lenovo.php"><img src="./imagenes/lenovo.png" width='400px' height='90px'></a> </td>
+                  <td><a href="apple.php?idusu=<?php echo $idusu; ?>"> <img src="./imagenes/apple.png" width="250px" height="250px"> </a> </td>
+                  <td><a href="lenovo.php?idusu=<?php echo $idusu; ?>"><img src="./imagenes/lenovo.png" width='400px' height='90px'></a> </td>
                 </tr>
               </tbody>
             </table>
@@ -75,14 +74,14 @@
             <table style="margin: 0 auto;">
               <thead>
                 <tr align= 'center'>
-                  <th> <a href="xiaomi.php"> Xiaomi </a> </th>
-                  <th> <a href="hp.php"> HP </a> </th>
+                  <th> <a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> Xiaomi </a> </th>
+                  <th> <a href="hp.php?idusu=<?php echo $idusu; ?>"> HP </a> </th>
                 </tr>
               </thead>
               <tbody>
                 <tr align= 'center'>
-                  <td><a href="xiaomi.php"> <img src="./imagenes/xiaomi.png" width="300px" height="200px"/></a></td>
-                  <td><a href="hp.php"><img src="./imagenes/hp.png" width="300px" height="200px"/></a></td>
+                  <td><a href="xiaomi.php?idusu=<?php echo $idusu; ?>"> <img src="./imagenes/xiaomi.png" width="300px" height="200px"/></a></td>
+                  <td><a href="hp.php?idusu=<?php echo $idusu; ?>"><img src="./imagenes/hp.png" width="300px" height="200px"/></a></td>
                 </tr>
               </tbody>
             </table>

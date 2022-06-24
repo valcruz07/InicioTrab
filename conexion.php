@@ -1,12 +1,10 @@
 <?php
 // Definir variables
-$server='localhost';
-$username='trabajo_sin';
-$password='trabajo_sin';
-$data='TrabajoSin';
 //Conexion a la base de datos
-$db= mysqli_connect($server,$username,$password,$data);
+    $host = getenv("PHP_MYSQL_HOST");
+    $user = getenv("PHP_MYSQL_USER");
+    $clave = getenv("PHP_MYSQL_PASSWORD");
+    $bd = "sin_trabajo_9";
+    $db = mysqli_connect($host,$user,$clave,$bd);
 
-//Iniciar sesión
-session_start();
 ?>

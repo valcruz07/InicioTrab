@@ -1,6 +1,7 @@
 <?php 
 require_once 'HP.php';
 include 'conexion.php';
+require_once 'iniciosesion.php';
 ?>
 
 <link rel="stylesheet" type="text/css" href="estilos.css">
@@ -24,12 +25,24 @@ include 'conexion.php';
             <li>
               <a href="carrito.php"> Carrito de compras </a>
             </li>
+            <?php
+              if($idusu == NULL){
+            ?>
             <li>
               <a href="sesion.php"> Iniciar Sesión </a>
             </li>
             <li>
-              <a href="portada.php"> Inicio </a>
+              <a href="index.php"> Inicio </a>
             </li>
+            <?php
+              }else{
+            ?>
+            <li>
+              <a href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
+            </li>
+            <?php
+            }
+            ?>
           </ul>
       </div>
     </nav>
@@ -72,8 +85,14 @@ include 'conexion.php';
                             <div class="moneda">
                              S/. <?php echo number_format($product['Prec_Precio'], 2, '.', ','); ?>
                             </div>
+                            <?php 
+                            if ($idusu != NULL){
+                            ?>
                             <a href = "carrito.php"
                              class = "boton-ad-car"> Añadir al carrito </a>
+                            <?php
+                            }
+                            ?>
                           </div>
                         </div>
                      </div>

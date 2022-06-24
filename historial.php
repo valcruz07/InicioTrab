@@ -1,4 +1,5 @@
-<?php require_once 'db.php';
+<?php require_once 'conexion.php';
+      require_once 'iniciosesion.php';
 //Llamamos a los pedidos
 ?>
 
@@ -38,11 +39,8 @@
               <a href="carrito.php"> Carrito de compras </a>
             </li>
             <li>
-              <a href="sesion.php"> VALERIAAAAAAAAAA </a>
+              <a href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
 
-            </li>
-            <li>
-              <a href="portada.php"> Inicio </a>
             </li>
           </ul>
         </nav>

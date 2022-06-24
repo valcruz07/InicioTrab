@@ -9,7 +9,9 @@
   </head>
   <body style="background-color:#08E7EE;">
 
-<?php require_once 'compra.php';?>
+<?php require_once 'compra.php';
+      require_once 'iniciosesion.php';
+?>
       <!--Cabecera -->
       <header id="cabecera">
         <div id="logo">
@@ -35,7 +37,7 @@
 
             </li>
             <li>
-              <a href="portada.php"> Inicio </a>
+              <a href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
             </li>
           </ul>
         </nav>
