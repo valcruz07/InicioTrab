@@ -1,7 +1,9 @@
 <?php 
 require_once 'conexion.php';
 require_once 'header.php';
-$query= "SELECT * FROM producto WHERE Prod_Nombre LIKE '%".$_POST['busqueda']."%'";
+$query= "SELECT * FROM producto 
+        WHERE Prod_Nombre LIKE '%".$_POST['busqueda']."%'
+        ORDER BY stock DESC";
 $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 ?>
