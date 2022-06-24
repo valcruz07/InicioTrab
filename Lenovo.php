@@ -63,7 +63,8 @@ require_once 'iniciosesion.php';
             JOIN prod_marca ON producto.id_Producto = prod_marca.id_Producto 
             JOIN marca ON marca.Id_Marca = prod_marca.Id_Marca 
             JOIN precio ON precio.id_Precio = producto.id_Precio
-            WHERE marca.Nombre='Lenovo'";
+            WHERE marca.Nombre='Lenovo'
+            ORDER BY stock DESC";
             $result = mysqli_query($db, $consult);
             $product = mysqli_fetch_array($result);
             $c = 1;

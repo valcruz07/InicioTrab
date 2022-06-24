@@ -36,7 +36,7 @@
               <a href="historial.php"> Historial </a>
             </li>
             <li>
-              <a href="carrito.php"> Carrito de compras </a>
+              <a href="cart.php?idusu=<?php echo $idusu; ?>"> Carrito de compras </a>
             </li>
             <li>
               <a href="portada2.php?idusu=<?php echo $idusu; ?>"> <?php $name = $row['CI_Nombre']; echo $name; ?> </a>
@@ -55,14 +55,10 @@
 
 <!-- TABLA CON LAS COMPRAS PASADAS -->
 <?php
-require('db.php');
+require('conexion.php');
 
 /* Variable para el control de errores*/
 $arrMensaje=array();
-
-/* OBJETO CONEXIÓN */
-//Ya lo obtienes en el require, me parece...
-$mysqli = new mysqli("localhost","root","","electroshop");
 
 /*
         * Escribiremos un código controlado, que vaya evaluando las variables
@@ -75,7 +71,7 @@ $mysqli = new mysqli("localhost","root","","electroshop");
         *relativo a la base de datos
 */
 
-if ($conexion){
+if ($db){
 
 
     /*
