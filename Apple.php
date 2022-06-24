@@ -1,5 +1,5 @@
 <?php 
-require_once 'Lenovo.php';
+require_once 'Apple.php';
 include 'conexion.php';
 ?>
 
@@ -14,7 +14,7 @@ include 'conexion.php';
     <meta charset="utf-8" />
     <meta name= "viewport" content="width=device-width, initial-scale=1"/>
     <!-- Agregar titulo -->
-    <title> ES | Lenovo </title>
+    <title> ES | Apple </title>
     </head>
   <body>
     <header>
@@ -35,7 +35,7 @@ include 'conexion.php';
     </nav>
     </header>
         <header style= "text-align: center;" class = "loguito">
-        <img src="imagenes/lenovo.png" >
+        <img src="imagenes/Apple-logo.jpg" >
         </header>
     <header>
       
@@ -50,7 +50,7 @@ include 'conexion.php';
             JOIN prod_marca ON producto.id_Producto = prod_marca.id_Producto 
             JOIN marca ON marca.Id_Marca = prod_marca.Id_Marca 
             JOIN precio ON precio.id_Precio = producto.id_Precio
-            WHERE marca.Nombre='Lenovo'";
+            WHERE marca.Nombre='Apple'";
             $result = mysqli_query($db, $consult);
             $product = mysqli_fetch_array($result);
             $c = 1;
@@ -61,7 +61,7 @@ include 'conexion.php';
             <div class = "col-xs-9 col-sm-5 col-md-4 product">
                 <div class = "card">
                   <div class = "text-centrado">
-                    <img src="imagenes/lenovo <?php echo $c; ?>.jpg" alt ="Imagen Producto <?php echo $c; ?>">
+                    <img src="imagenes/apple <?php echo $c; ?>.jpg" alt ="Imagen Producto <?php echo $c; ?>">
                     <h5 > <?php echo $product['Prod_Nombre']; ?> </h5>
 
                     <div class="container mt-5">
@@ -89,5 +89,3 @@ include 'conexion.php';
             </div>
         </div>
             </div>
-
-
