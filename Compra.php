@@ -1,23 +1,38 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<HTML lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name= "viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Agregar titulo -->
+    <title> ElectroShop </title>
+    <link rel="stylesheet" type="text/css" href="estilos.css"
+  </head>
+  <body style="background-color:#08E7EE;">
 
-    <body style="background-color:#08E7EE;>
+<?php require_once 'compra.php';?>
+      <!--Cabecera -->
       <header id="cabecera">
         <div id="logo">
-          <a href="portada.php">
+          <a href="portada2.php">
             <h1> ElectroShop </h1>
           </a>
         </div>
         <!--/Menu -->
+        <br/>
+        <br/>
         <nav id="menu">
-        <br/>
-        <br/>
           <ul>
+            <li>
+              <a href="cerrar.php"> Cerrar Sesión </a>
+            </li>
+            <li>
+              <a href="historial.php"> Historial </a>
+            </li>
             <li>
               <a href="carrito.php"> Carrito de compras </a>
             </li>
             <li>
-              <a href="sesion.php"> Iniciar Sesión </a>
+
             </li>
             <li>
               <a href="portada.php"> Inicio </a>
@@ -25,35 +40,28 @@
           </ul>
         </nav>
 
-      </header>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      
         <center>
             <form id="card-form">
                 
                             <div class="card">
                     <div class="card-header">
                         <div class="row display-tr">
-                            <h3>Pago en línea</h3>
-                                <link rel="stylesheet" type="text/css" href="estilos.css"
+                            <br/><br/><br/><h3><H1>PAGO EN LÍNEA</H1></h3>
+                                <link rel="stylesheet" type="text/css" href="estcompra.css"
 
                         </div>
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <label>
-                                    Nombre del dueño de la tarjeta
+                                <label >
+                                    <H2>Nombre del dueño de la tarjeta</H2>
                                 </label>
                                 <input value="Marco Martínez" class="form-control" name="name" id="name"  type="text" >
                             </div>
                             <div class="col-md-6">
                                     <label>
-                                        Número de tarjeta
+                                    <H2>Número de tarjeta</H2>
                                     </label>
                                     <input value="1234567891234567" name="card" id="card" class="form-control"   type="text" maxlength="16" >
                             </div>
@@ -62,13 +70,13 @@
                         <div class="row">
                                 <div class="col-md-6">
                                     <label>
-                                        CVV
+                                    <H2>CVV</H2>
                                     </label>
                                     <input value="425" class="form-control"  type="text" maxlength="3" >
                                 </div>
                                 <div class="col-md-6">
                                         <label>
-                                            Fecha de expiración (MM/AAAA)
+                                        <H2>Fecha de expiración (MM/AAAA)</H2>
                                         </label>
                                         <div>
                                             <input style="width:50px; display:inline-block" value="05" class="form-control"  type="text" maxlength="2" >
@@ -79,15 +87,15 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <label><span>Email</span></label>
+                                <label><H2><span>Email</span></H2></label>
                                 <input class="form-control" type="text" name="email" id="email" maxlength="200" value="marco.martinez@marco.martinez.com">
                             </div>
                             <div class="col-md-4">
-                                <label>Concepto</label>
+                                <label><H2>Concepto</H2></label>
                                 <input class="form-control" type="text" name="description" id="description" maxlength="100" value="Apple MacBook M1 256GB 8GB Plata">
                             </div>
                             <div class="col-md-4">
-                                <label>Monto</label>
+                                <label><H2>Monto</H2></label>
                                 <input class="form-control" type="number" name="total" id="total" value="2780">
                             </div>
                         
